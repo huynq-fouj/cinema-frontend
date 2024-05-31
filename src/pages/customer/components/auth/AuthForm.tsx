@@ -55,6 +55,7 @@ export default function AuthForm() {
             }
 
             AuthService.signup(data).then(res => {
+                console.log(res);
                 navigate("/login");
                 toast.success("Đăng ký thành công!", { id: toaster });
             }).catch(err => {

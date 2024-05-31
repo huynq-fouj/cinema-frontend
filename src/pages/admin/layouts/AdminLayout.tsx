@@ -3,7 +3,6 @@ import Footer from "../components/Footer";
 import Header from "../components/header/Header";
 import Sidebar from "../components/sidebar/Sidebar";
 import { useEffect, useLayoutEffect, useState } from "react";
-import toast from "react-hot-toast";
 
 import "./admin.scss";
 import clsx from "clsx";
@@ -12,7 +11,7 @@ import { useAppSelector } from "../../../shared/hooks";
 export default function AdminLayout() {
 
     const { isLoggedIn, user } = useAppSelector(state => state.auth);
-    const navigate = useNavigate();
+    //const navigate = useNavigate();
     const [toggleSidebar, setToogleSidebar] = useState<boolean>(false);
 
     //Scroll lên top khi chuyển link
@@ -41,7 +40,6 @@ export default function AdminLayout() {
                 <Outlet/>
             </main>
             <Footer isToogleSidebar={toggleSidebar}/>
-            {/* <div className="admin-background"></div> */}
         </>
     )
 }

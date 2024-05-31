@@ -10,6 +10,7 @@ class MovieService {
     }
 
     getMovies(params: any) {
+        console.log(params);
         return this.http.get('/movies');
     }
 
@@ -18,6 +19,7 @@ class MovieService {
     }
 
     getAllMovies(params: any) {
+        console.log(params);
         return this.http.get('/admin/movies', {
             headers: HeaderService.createAuthorizationHeader(),
         });

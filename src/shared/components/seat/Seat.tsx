@@ -5,13 +5,11 @@
  */
 export default function Seat({type, seatStatus}: any) {
 
-    const handleClickSeat = () => {
-
-    }
-
     return (
         <div>
             Ghế {type}
+            <br/>
+            Trạng thái {seatStatus}
         </div>
     )
 }

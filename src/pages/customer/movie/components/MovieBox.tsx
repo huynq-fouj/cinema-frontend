@@ -10,7 +10,7 @@ export default function MovieBox({ movie }: Readonly<MovieBoxProps>) {
     const handleShowTrailer = () => {
         dispatch(setOptionTrailer({
             visible: true,
-            url: movie.trailer,
+            url: movie.trailer ?? '',
         }));
     };
 
