@@ -12,7 +12,7 @@ export default function Banner() {
 
     const config: Settings = {
         dots: true,
-        lazyLoad: "ondemand", //"ondemand" | "progressive" | "anticipated"
+        //lazyLoad: "ondemand", //"ondemand" | "progressive" | "anticipated"
         autoplay: true,
         infinite: true,
         speed: 800,
