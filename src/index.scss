@@ -1,0 +1,47 @@
+@import 'node_modules/react-modal-video/scss/modal-video.scss';
+@import './variable.scss';
+// Custom style
+a {
+    text-decoration: none;
+}
+
+.focus-ring-danger:focus {
+    box-shadow: 0 0 0 0.25rem rgb(220, 53, 69, 0.25);
+}
+
+.fs-7 {
+    font-size: 14px;
+}
+
+.hover-text-underline {
+    text-decoration: underline transparent;
+    transition: all 0.2s ease;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.tab-movies {
+    .tab-movie-item {
+        cursor: pointer;
+        position: relative;
+        transition: all 0.2s ease;
+        &::after {
+            content: "";
+            position: absolute;
+            height: 5px;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            background-image: linear-gradient(to right, #68b6f2,#237fc6, #03599d);
+            opacity: 0;
+            transition: all 0.2s ease;
+        }
+        &.active {
+            color: #03599d;
+            &::after {
+                opacity: 1;
+            }
+        }
+    }
+}

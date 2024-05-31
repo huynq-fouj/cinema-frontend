@@ -1,0 +1,52 @@
+.slick-prev {
+    left: 1rem;
+    z-index: 10;
+    display: flex;
+    width: 2rem;
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+    &::before {
+        font-size: 2rem;
+    }
+}
+
+.slick-next {
+    right: 1rem;
+    z-index: 10;
+    display: flex;
+    width: 2rem;
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+    &::before {
+        font-size: 2rem;
+    }
+}
+
+.banner-item {
+    width: 100%;
+    height: 160px;
+    img {
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 576px) {
+    .banner-item {
+        height: 300px;
+    }
+}
+
+@media (min-width: 768px) {
+    .banner-item {
+        height: 390px;
+    }
+}
+
+@media (min-width: 992px) { 
+    .banner-item {
+        height: 500px;
+    }
+}

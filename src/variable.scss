@@ -1,0 +1,51 @@
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-x-center {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-y-center {
+    display: flex;
+    align-items: center;
+}
+
+@for $i from 0 through 1000 {
+    .fs-\[#{$i}\] { font-size: #{$i}px; }
+    .w-\[#{$i}\] { width: #{$i}px; }
+    .h-\[#{$i}\] { height: #{$i}px; }
+    .m-\[#{$i}\] { margin: #{$i}px; }
+    .p-\[#{$i}\] { padding: #{$i}px; }
+
+    @media (min-width: 576px) {
+        .sm\:fs-\[#{$i}\] { font-size: #{$i}px;}
+        .sm\:w-\[#{$i}\] { width: #{$i}px;}
+        .sm\:h-\[#{$i}\] { height: #{$i}px;}
+        .sm\:m-\[#{$i}\] { margin: #{$i}px;}
+        .sm\:p-\[#{$i}\] { padding: #{$i}px;}
+    }
+    
+    @media (min-width: 768px) {
+        .md\:fs-\[#{$i}\] { font-size: #{$i}px;}
+        .md\:w-\[#{$i}\] { width: #{$i}px;}
+        .md\:h-\[#{$i}\] { height: #{$i}px;}
+        .md\:m-\[#{$i}\] { margin: #{$i}px;}
+        .md\:p-\[#{$i}\] { padding: #{$i}px;}
+    }
+    
+    @media (min-width: 992px) { 
+        .lg\:fs-\[#{$i}\] { font-size: #{$i}px;}
+        .lg\:w-\[#{$i}\] { width: #{$i}px;}
+        .lg\:h-\[#{$i}\] { height: #{$i}px;}
+        .lg\:m-\[#{$i}\] { margin: #{$i}px;}
+        .lg\:p-\[#{$i}\] { padding: #{$i}px;}
+    }
+}
+
+@for $i from 0 through 100 {
+    .opacity-\[#{$i}\] {opacity: #{$i * 0.01};}
+}

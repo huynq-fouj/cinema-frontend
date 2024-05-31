@@ -1,0 +1,21 @@
+.img-building {
+    width: 100%;
+}
+
+@media (min-width: 576px) {
+    .img-building {
+        width: 75%;
+    }
+}
+
+@media (min-width: 786px) {
+    .img-building {
+        width: 60%;
+    }
+}
+
+@media (min-width: 992px) {
+    .img-building {
+        width: 45%;
+    }
+}
